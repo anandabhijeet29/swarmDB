@@ -1,0 +1,15 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres:16
+    container_name: swarmdb-postgres
+    environment:
+      POSTGRES_USER: swarm_user
+      POSTGRES_PASSWORD: swarm_pass
+      POSTGRES_DB: swarm_main
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

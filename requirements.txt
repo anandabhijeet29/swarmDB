@@ -1,0 +1,7 @@
+psycopg[binary,pool]
+sqlalchemy
+pandas
+python-dotenv
+rich
+openai
+streamlit
